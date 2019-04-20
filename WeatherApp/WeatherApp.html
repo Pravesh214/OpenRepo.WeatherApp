@@ -1,0 +1,35 @@
+
+<html>
+<head>
+  <title>Get Weather App</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" ></script>
+  <script type = "text/javascript" src = "C:\Users\ravsh\OneDrive\Desktop\WebApplication\TestProject\script2.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class = "pagebody">
+		<div id = "secondcontainer">
+			<h4>Choose your City:</h4>
+			<select id= "selectcountry" name = "selectcountry" onchange = "populatecity(this.id, 'selectcity')">
+				<option value="" selected disabled hidden>Select Country</option>
+				<option value="India">India</option>
+				<option value="Poland">Poland</option>
+				<option value="United States">United States</option>	
+			</select>
+			<select id = "selectcity">
+			</select>
+			<button id="submitcity" onclick = "getcityweatherfromlist('selectcity')">Submit</button>
+		</div>
+	<hr/>
+		<div id = "firstcontainer">
+			<h4>Couldn't Find your city, Search below<h4/>
+		  <input id="city" value = ""/>
+		  <button id="getweather" onclick = "getcityweather()">GET WEATHER</button> 
+		</div>
+
+		<div id = "thirdcontainer">
+			<div class="showweather"></div>
+		</div>
+	</div>
+</body>
+</html>
