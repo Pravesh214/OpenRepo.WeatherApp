@@ -20,7 +20,7 @@ function ajaxfunction(){
               url:'http://api.openweathermap.org/data/2.5/weather',
               dataType:'json',
               type:'GET',
-              data:{q:city, appid: '196b85c0e5f8fed0db025cdd38ebdfb9', units: 'metric'},
+              data:{q:city, appid: 'PleaseProvideYourApiIdHere', units: 'metric'},
 
               success: function(dataresponse){
 				  var weatherdata = '';
